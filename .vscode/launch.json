@@ -1,0 +1,89 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio1",
+            "request": "launch",
+            "mainClass": "Ejercicio1"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio10",
+            "request": "launch",
+            "mainClass": "Ejercicio10"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio11",
+            "request": "launch",
+            "mainClass": "Ejercicio11"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio12",
+            "request": "launch",
+            "mainClass": "Ejercicio12"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio5",
+            "request": "launch",
+            "mainClass": "Ejercicio5"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio7",
+            "request": "launch",
+            "mainClass": "Ejercicio7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio8",
+            "request": "launch",
+            "mainClass": "Ejercicio8"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ejercicio9",
+            "request": "launch",
+            "mainClass": "Ejercicio9"
+        }
+    ]
+}
