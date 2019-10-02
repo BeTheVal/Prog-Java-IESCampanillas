@@ -4,39 +4,21 @@ public class Ejercicio1 {
         System.out.print("¿Que día es Hoy? : ");
         String respuesta = System.console().readLine().toLowerCase();
         
-        if (respuesta.equals("lunes")) {
-            System.out.println("Tienes Programación con Luis, mas te vale ser puntual");
-        } else {
-            ;
-        }
-        if (respuesta.equals("martes")) {
-            System.out.println("Tienes Entornos de desarrollo con Pilar, mas te vale ser coger apuntes");
-
-        } else {
-            ;
-        }
-        if (respuesta.equals("miercoles")) {
-        System.out.println("Tienes Programación con Luis, mas te vale ser puntual");
-        } else {
-            ;
-        }
-        if (respuesta.equals("jueves")) {
-            System.out.println("Tienes Programación con Luis, mas te vale ser puntual");
-        } else {
-            ;
-        }
-        if (respuesta.equals("viernes")) {
-            System.out.print("Tienes Programación con Luis, mas te vale ser puntual");
-        } else {
-            ;
-        }
-
-        if (respuesta.equals("sabado") || respuesta.equals("domingo")) {
-            System.out.println("Creo que debes tomarte un café...");
-        } else {
-            ;
-        }
-
-
+        switch(respuesta){
+            default:
+            System.out.println("Introduzca el día correcto");
+            case "lunes":
+            case "miercoles":
+            case "miércoles":
+            case "jueves":
+                System.out.println("Tienes Programación");
+                break;
+            case "martes":
+                System.out.println("Tienes entornos de desarrollo");
+                break;
+            case "viernes":
+                System.out.println("Tienes sistemas informáticos");
+                break;
+        }       
     }
 }

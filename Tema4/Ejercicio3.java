@@ -3,25 +3,28 @@ public class Ejercicio3 {
         System.out.print("Introduce un número del 1 al 7 y te diré a que día corresponde : ");
         int numero = Integer.parseInt(System.console().readLine());
 
-        if (numero == 1){
+        switch (numero){
+            default:
+            System.out.println("No es correcto lo que has introducido");
+            case 1:
             System.out.println("Corresponde al lunes");
-        }
-        if (numero == 2){
+            break;
+            case 2:
             System.out.println("Corresponde  al martes");
-        }
-        if (numero == 3){
+            break;
+            case 3:
             System.out.println("Corresponde al miércoles");
-        }
-        if (numero == 4){
+            break;
+            case 4:
             System.out.println("Corresponde el jueves");
-        }
-        if (numero == 5){
+            break;
+            case 5:
             System.out.print("Corresponde el viernes");
-        }
-        if (numero == 6){
+            break;
+            case 6:
             System.out.println("Corresponde el sábado");
-        }
-        if (numero == 7){
+            break;
+            case 7:
             System.out.println("Corresponde el domingo");
         }
     }
