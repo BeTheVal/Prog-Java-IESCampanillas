@@ -10,7 +10,5 @@ public class Ejercicio5 {
         //Cálculo
         double x = (-b/a);
         System.out.println("X = " + x);
-
-
     }
 }

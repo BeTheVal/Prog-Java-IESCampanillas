@@ -4,7 +4,6 @@
 // A partir de la hora 41, se pagan a 16 euros la hora.
 public class Ejercicio4 {
     public static void main(String[] args) {
-        
         System.out.print("Por favor, introduzca el número de horas trabajadas durante la semana: ");
         int horastrabajadas = Integer.parseInt(System.console().readLine());
         int sueldosemanal;
