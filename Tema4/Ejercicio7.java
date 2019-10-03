@@ -7,7 +7,7 @@ public class Ejercicio7 {
         System.out.println("Inserte la tercera nota: ");
         double terceraNota = Double.parseDouble( System.console().readLine());
         //Media de la nota
-        double media = (primeraNota+segundaNota+terceraNota);
+        double media = ((primeraNota+segundaNota+terceraNota)/3);
         System.out.println("Tu media es de: " + media);
     }
 }
