@@ -7,8 +7,5 @@ public class Ejercicio10 {
     kbaaconvertir = Double.parseDouble(System.console().readLine());
     totalmb = (kbaaconvertir * factordeconversion);
     System.out.print("Total en Mb :" + totalmb);
-
-
-
 }
 }
