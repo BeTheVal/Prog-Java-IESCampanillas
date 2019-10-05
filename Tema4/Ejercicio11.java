@@ -15,8 +15,5 @@ public class Ejercicio11 {
         //Cálculos
          int segundosHastaMediaNoche = ( segundosEnUnDia - (horaEnSegundos + minutosEnSegundos));
          System.out.println("Quedan " + segundosHastaMediaNoche + " segundos para la media noche");
-
-
-
     }
 }
