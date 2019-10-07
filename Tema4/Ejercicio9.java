@@ -8,15 +8,18 @@ public class Ejercicio9 {
         double b = Double.parseDouble( System.console().readLine());
         System.out.print("Ingrese c: ");
         double c = Double.parseDouble( System.console().readLine());
-        double auxiliar = (b*b) - (4* a*c);
-        //Calculo
-        double primerResultado = (-b + Math.sqrt(auxiliar)) / (2*a);
-        double segundoResultado = (-b - Math.sqrt(auxiliar)) / (2*a);
-
-        if (auxiliar == (-auxiliar)){
-            System.out.println("Esta operación no tiene resultado");
+        if (a == 0 && b !=0 && c != 0) {
+        System.out.printlnf("La solución es %.2f", -c/b);
+        double auxiliar = (b*b) - (4* a * c);
+        if (auxiliar < 0){
+            System.out.println("Esta ecuación no tiene solución real");
         } else {
+            double primerResultado = (-b + Math.sqrt(auxiliar)) / (2*a);
+            double segundoResultado = (-b - Math.sqrt(auxiliar)) / (2*a);
             System.out.printf("Los resultados son: %.2f y %.2f\n" , primerResultado , segundoResultado);
         }
+    }
+
+        
     }
 }
