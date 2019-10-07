@@ -8,12 +8,12 @@ public class Ejercicio14{
             System.out.println("Tu número es par");
         } else {
             System.out.println("Tu numero es impar");
+        }
         //¿Divisible por 5? 
         if ((numeroIntroducido % 5) == 0 ) {
             System.out.println("Tu número es divisible por 5");
         }else{
             System.out.println("Tu número no es divisible por 5");
             }
-        }
     }
 }

@@ -14,8 +14,8 @@ public class Ejercicio12 {
         } else {
             puntuacion --;
         }
-        System.out.print("2ª Pregunta");
-        System.out.print("¿Que es el Bytecode en Java?  ");
+        System.out.println("2ª Pregunta");
+        System.out.println("¿Que es el Bytecode en Java?");
         System.out.println("A .El formato de intercambio de datos");
         System.out.println("B. El formato que obtenemos tras compilar .java");
         System.out.println("C. Un tipo de variable"); 
