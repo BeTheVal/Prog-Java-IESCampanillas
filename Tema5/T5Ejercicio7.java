@@ -8,7 +8,7 @@ public class T5Ejercicio7 {
             int clave = Integer.parseInt( System.console().readLine());
             if (combinacion == clave) {
                 System.out.println("La clave introducida es correcta");
-                break;
+                intentosMaximos = 0;
             } else {
                 System.out.println("La clave introducida es incorrecta");
                 intentosMaximos -= 1;
