@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ejercicio29 {
 
   public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     String pitufo = "";
     String resultado = "";
@@ -12,11 +12,11 @@ public class Ejercicio29 {
 
     // Comida
     System.out.print("¿Qué ha tomado de comer? (palmera, donut o pitufo): ");
-    String comida = s.nextLine();
+    String comida = sc.nextLine();
 
     if (comida.equalsIgnoreCase("pitufo")) {
       System.out.print("¿Con qué se ha tomado el pitufo? (aceite o tortilla): ");
-      pitufo = s.nextLine();
+      pitufo = sc.nextLine();
 
       if (pitufo.equalsIgnoreCase("aceite")) {
         resultado = "Pitufo con aceite: 1,20 €";
@@ -34,7 +34,7 @@ public class Ejercicio29 {
     }
     // Bebida
     System.out.print("¿Qué ha tomado de beber? (zumo o café): ");
-    String bebida = s.nextLine();
+    String bebida = sc.nextLine();
     if (bebida.equalsIgnoreCase("zumo")) {
       resultado += "\nZumo: 1,50 €";
       precioBebida = 1.50;
@@ -42,6 +42,7 @@ public class Ejercicio29 {
       resultado += "\nCafé: 1,20 €";
       precioBebida = 1.20;
     }
+    sc.close();
     System.out.println(resultado);
     System.out.printf("Total desayuno: %.2f €\n", precioComida + precioBebida);
   }
