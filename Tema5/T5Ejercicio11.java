@@ -5,6 +5,7 @@ public class T5Ejercicio11 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca número: ");
         int numeroIntroducido = Integer.parseInt(sc.nextLine());
+        sc.close();
         for (int i = numeroIntroducido; i < numeroIntroducido + 5; i++) {
             System.out.printf("%4d %6d %8d\n", i, i * i, i * i * i);
           }

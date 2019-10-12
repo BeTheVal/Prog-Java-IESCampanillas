@@ -14,5 +14,6 @@ public class T5Ejercicio13 {
             }
         }
         System.out.println("Has introducido : "+ positivos + " números positivos y "+ negativos + " números negativos" );
+        sc.close();
     }
 }

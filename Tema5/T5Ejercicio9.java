@@ -7,6 +7,7 @@ public class T5Ejercicio9 {
         int n;
         System.out.println("Introduzca un numero entero y te diré la cantidad de digitos");
         int numeroIntroducido = Integer.parseInt(sc.nextLine());
+        sc.close();
         n = numeroIntroducido;
         while (n > 10){
             n /=10;

@@ -9,6 +9,7 @@ public class T5Ejercicio10 {
      do{
          System.out.println("Introduzca un número entero: ");
          numero = Integer.parseInt(sc.nextLine());
+         sc.close();
          acumulador += numero;
          contador ++;
      }while(numero >= 0);
