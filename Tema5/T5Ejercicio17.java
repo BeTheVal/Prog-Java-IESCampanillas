@@ -6,10 +6,7 @@ public class T5Ejercicio17 {
     //es correcto (que es un número positivo)
     Scanner sc = new Scanner(System.in);
     int num = 0;
-    boolean salida = false;
-    // Crearlo con do-while
-    // if en para cada caso
-    
+    boolean salida = false;    
     do {
     System.out.println("Introduce un número positivo: ");
     num = Integer.parseInt(sc.nextLine());
@@ -25,5 +22,6 @@ public class T5Ejercicio17 {
         salida = true;
     }
     } while (!salida);
+    sc.close();
 }
 }
