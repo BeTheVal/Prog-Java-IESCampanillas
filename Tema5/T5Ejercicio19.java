@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class T5Ejercicio19 {
     public static void main(String[] args) {
         
