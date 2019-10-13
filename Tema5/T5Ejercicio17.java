@@ -6,23 +6,24 @@ public class T5Ejercicio17 {
     //es correcto (que es un número positivo)
     Scanner sc = new Scanner(System.in);
     int num = 0;
-    
+    boolean salida = false;
     // Crearlo con do-while
+    // if en para cada caso
     
-    
+    do {
     System.out.println("Introduce un número positivo: ");
     num = Integer.parseInt(sc.nextLine());
+    
     if (num < 0){
     System.out.println("No has introducido un número positivo");
+    } else{
+        int suma;
+        for (int i = 0 ; i < 100 ; i ++) {
+            suma = num ++;
+            System.out.println(suma);
+        }
+        salida = true;
     }
-    sc.close();
-    int suma;
-    for (int i = 0 ; i < 100 ; i ++) {
-        suma = num + 1;
-        System.out.println(suma);
-
-    }
-
-
+    } while (!salida);
 }
 }
