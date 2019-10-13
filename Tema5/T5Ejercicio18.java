@@ -11,23 +11,18 @@ public class T5Ejercicio18 {
     System.out.println("Introduce el primer numero: ");
     int segundoNumero = Integer.parseInt(sc.nextLine());
     
-    
-    // Comprobar cual es menor
     int menor;
     int mayor;
+
     if (primerNumero < segundoNumero) {
         menor = primerNumero;
         mayor = segundoNumero;
     } else {
         menor = segundoNumero;
         mayor = primerNumero;
-    
     }
-
-
-    for (int i = 0 ; i > mayor; i += 7) {
-        System.out.println();
+    for (int i = 0 ; i < mayor; i += 7) {
+        System.out.println(menor += i);
     }
-
     }
 }
