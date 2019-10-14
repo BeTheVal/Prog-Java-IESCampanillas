@@ -10,7 +10,7 @@ public class T5Ejercicio18 {
     int primerNumero = Integer.parseInt(sc.nextLine());
     System.out.println("Introduce el primer numero: ");
     int segundoNumero = Integer.parseInt(sc.nextLine());
-    
+    sc.close();
     int menor;
     int mayor;
 
