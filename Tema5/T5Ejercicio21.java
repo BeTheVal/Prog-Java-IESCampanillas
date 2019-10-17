@@ -10,18 +10,28 @@ public class T5Ejercicio21 {
          * cómputo.
          */
         Scanner sc = new Scanner(System.in);
+        int num = 0;
         int aux = 0;
-
-        int i = 0;
-        while (i < 0) {
+        int almacenamiento = 0;
+        int media = 0;
+        int mayorPares = 0;
+        while (num >= 0) {
             System.out.println("Inserte número :");
-            int num = Integer.parseInt(sc.nextLine());
-            if (num % 2 == 0 && num > aux) {
-                aux = num;
-
+            num = Integer.parseInt(sc.nextLine());
+            if (num % 2 != 0) {
+                for (int i = 0; i == 0; i++) {
+                    // Media de los impares
+                    almacenamiento += num;
+                    aux++;
+                    media = almacenamiento / aux;
+                }
             }
-
+            if (num % 2 == 0) {
+                if (mayorPares < num) {
+                    mayorPares = num;
+                }
+            }
         }
-        sc.close();
+        System.out.println("la media de los impares es: " + media + "y el mayor de los pares es: " + mayorPares);
     }
 }
