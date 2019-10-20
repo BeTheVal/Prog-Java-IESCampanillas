@@ -5,6 +5,7 @@ public class T5Ejercicio28 {
         teclado. */
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce el número : ");
+        sc.close();
         int numero = Integer.parseInt(sc.nextLine());
         int aux = numero;
          for (int i = 1; i < numero; i++) {
