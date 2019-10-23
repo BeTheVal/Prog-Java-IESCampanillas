@@ -5,7 +5,7 @@ public class T6Ejercicio5 {
      * separados por espacios. Muestra también el máximo, el mínimo y la media de
      * esos números.
      */
-    System.out.println("20 números aleatorios entre 100 y 199:");
+    System.out.println("50 números aleatorios entre 100 y 199:");
     int media = 0;
     int mayor = 0;
     int menor = 120;
