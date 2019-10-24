@@ -11,7 +11,7 @@ public class T6Ejercicio5 {
     int menor = 120;
     for (int i = 1; i <= 50; i++) {
       // System.out.print(((int) (Math.random() * 50) + 100) + " ");
-      int numero = ((int) (Math.random() * 50) + 100);
+      int numero = ((int) (Math.random() * 100) + 100);
       System.out.println(numero);
 
       // mayor
