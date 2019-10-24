@@ -14,23 +14,90 @@ public class T6Ejercicio2 {
     switch (palo) {
     // Caso para picas
     case 1:
-      int numPicas = ((int) (Math.random() * 14) + 1);
-      if (numPicas == 11) {
-
-      }
-      if (numPicas == 12) {
-
-      }
-      if (numPicas == 13) {
-
-      }
-      if (numPicas == 14) {
-
-      }
-
+        int numPicas = ((int) (Math.random() * 13) + 1);
+        if (numPicas == 11) {
+          System.out.println("J de Picas");
+          break;
+        }
+        if (numPicas == 12) {
+          System.out.println("Q de Picas");
+          break;
+        }
+        if (numPicas == 13) {
+          System.out.println("K de Picas");
+          break;
+        }
+        if (numPicas == 1) {
+          System.out.println("A de Picas");
+          break;
+        }
+        System.out.println(numPicas + " de Picas");
+        break;
       // Caso para corazones
+        case 2:
+        int numCorazones = ((int) (Math.random() * 13) + 1);
+        if (numCorazones == 11) {
+          System.out.println("J de Corazones");
+          break;
+        }
+        if (numCorazones == 12) {
+          System.out.println("Q de Corazones");
+          break;
+        }
+        if (numCorazones == 13) {
+          System.out.println("K de Corazones");
+          break;
+        }
+        if (numCorazones == 1) {
+          System.out.println("A de Corazones");
+          break;
+        }
+        System.out.println(numCorazones + " de Corazones");
+        break;
+      
       // caso para diamantes
+      case 3:
+        int numDiamantes = ((int) (Math.random() * 13) + 1);
+        if (numDiamantes == 11) {
+          System.out.println("J de Diamantes");
+          break;
+        }
+        if (numDiamantes == 12) {
+          System.out.println("Q de Diamantes");
+          break;
+        }
+        if (numDiamantes == 13) {
+          System.out.println("K de Diamantes");
+          break;
+        }
+        if (numDiamantes == 1) {
+          System.out.println("A de Diamantes");
+          break;
+        }
+        System.out.println(numDiamantes + " de Diamantes");
+        break;
       // caso para tréboles
+      case 4:
+      int numtreboles = ((int) (Math.random() * 13) + 1);
+        if (numtreboles == 11) {
+          System.out.println("J de treboles");
+          break;
+        }
+        if (numtreboles == 12) {
+          System.out.println("Q de treboles");
+          break;
+        }
+        if (numtreboles == 13) {
+          System.out.println("K de treboles");
+          break;
+        }
+        if (numtreboles == 1) {
+          System.out.println("A de treboles");
+          break;
+        }
+        System.out.println(numtreboles + " de treboles");
+        break;
+
     }
   }
 }
