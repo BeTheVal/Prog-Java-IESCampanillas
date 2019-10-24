@@ -8,5 +8,29 @@ public class T6Ejercicio2 {
      * (que sería el 1). Para convertir un número en una cadena de caracteres
      * podemos usar String.valueOf(n) .
      */
+    // Generar un palo(aleatorio del 1 al 4)
+    // Numero aleatorio para :
+    int palo = ((int) (Math.random() * 4) + 1);
+    switch (palo) {
+    // Caso para picas
+    case 1:
+      int numPicas = ((int) (Math.random() * 14) + 1);
+      if (numPicas == 11) {
+
+      }
+      if (numPicas == 12) {
+
+      }
+      if (numPicas == 13) {
+
+      }
+      if (numPicas == 14) {
+
+      }
+
+      // Caso para corazones
+      // caso para diamantes
+      // caso para tréboles
+    }
   }
 }

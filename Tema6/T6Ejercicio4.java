@@ -6,8 +6,8 @@ public class T6Ejercicio4 {
      */
     System.out.println("Muestra 20 números enteros aleatorios entre 0 y 10 (ambos incluidos)");
     for (int i = 1; i <= 20; i++) {
-      int numero = (int) (Math.random() * 10) + 1;
-      System.out.print(numero + "  ");
+      int numero = (int) (Math.random() * 11);
+      System.out.println(numero + "  ");
     }
   }
 }
