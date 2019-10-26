@@ -9,7 +9,7 @@ public class Ejercicio9 {
         System.out.print("Ingrese c: ");
         double c = Double.parseDouble(System.console().readLine());
         if (a == 0 && b != 0 && c != 0) {
-            System.out.println("La solución es %.2f", -c / b);
+            System.out.printf("La solución es %.2f", -c / b);
             double auxiliar = (b * b) - (4 * a * c);
             if (auxiliar < 0) {
                 System.out.println("Esta ecuación no tiene solución real");
