@@ -15,6 +15,7 @@ public class T6Ejercicio6 {
         do {
             System.out.print("Inserte el número: ");
             intento = sc.nextInt();
+            sc.close();
             if (numero != intento && contador > 0) {
                 contador--;
                 System.out.println("Te quedan " + contador + " intentos");
