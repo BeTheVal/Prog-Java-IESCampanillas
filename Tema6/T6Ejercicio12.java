@@ -5,5 +5,13 @@ public class T6Ejercicio12 {
 		 * Matrix) con el código ascii entre el 32 y el 126. Puedes hacer casting con
 		 * (char) para convertir un entero en un carácter.
 		 */
+
+		/// OJO! Bucle infinito ///
+		boolean salida = false;
+		while (!salida) {
+			char caracterAleatorio = ((char) (Math.random() * (126 - 32 + 1) + 32));
+			System.out.print(caracterAleatorio);
+
+		}
 	}
 }
