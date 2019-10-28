@@ -51,6 +51,6 @@ public class T6Ejercicio11 {
     System.out.println("Cantidad bien : " + numeroBien);
     System.out.println("Cantidad suficientes : " + numeroSuficiente);
     System.out.println("Cantidad suspensos : " + numeroSuspenso);
-
+    ///////////////////////////////////////////////////////
   }
 }
