@@ -12,7 +12,7 @@ public class T6Ejercicio13 {
 			segundoDado = (int) ((Math.random() * 6) + 1);
 			System.out.println("Resultado primer dado : " + primerDado + " Resultado del segundo dado : " + segundoDado);
 		} while (primerDado != segundoDado);
-		///////////////
+		//////////////////////////////////
 
 	}
 }
