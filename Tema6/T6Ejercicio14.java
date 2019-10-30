@@ -18,9 +18,9 @@ public class T6Ejercicio14 {
 		String mayorOMenor;
 		while (numeropensado != adivinarNumero || contador == 5) {
 			adivinarNumero = (int) ((Math.random() * 100) + 1);
-			System.out.print("¿Tu número es el " + adivinarNumero + " ?" );
+			System.out.print("¿Tu número es el " + adivinarNumero + " ?");
 			System.out.print("¿Es mayor o menor?");
-			mayorOMenor = sc.nextLine()
+			mayorOMenor = sc.nextLine();
 			contador++;
 		}
 
