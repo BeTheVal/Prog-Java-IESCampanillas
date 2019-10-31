@@ -31,6 +31,7 @@ public class T6Ejercicio14 {
 				contador = 5;
 			}
 			contador++;
+			sc.close();
 		}
 
 	}
