@@ -13,14 +13,23 @@ public class T6Ejercicio14 {
 		int numeropensado = 0;
 		int contador = 0;
 		int adivinarNumero = 1;
-		int mayor = 100;
-		int menor = 0;
-		String mayorOMenor;
-		while (numeropensado != adivinarNumero || contador == 5) {
-			adivinarNumero = (int) ((Math.random() * 100) + 1);
-			System.out.print("¿Tu número es el " + adivinarNumero + " ?");
-			System.out.print("¿Es mayor o menor?");
+		int numeroMayor = 101;
+		int numeroMenor = 1;
+		String mayorOMenor = "igual";
+		while (numeropensado != adivinarNumero && contador < 5) {
+			adivinarNumero = (int) ((Math.random() * numeroMayor - numeroMenor) + numeroMenor);
+			System.out.println("¿Tu número es el " + adivinarNumero + " ?");
+			System.out.println("¿Es mayor , menor o igual?");
 			mayorOMenor = sc.nextLine();
+			if (mayorOMenor.equals("mayor")) {
+				numeroMenor = adivinarNumero + 1;
+			}
+			if (mayorOMenor.equals("menor")) {
+				numeroMayor = adivinarNumero - 1;
+			}
+			if (mayorOMenor.equals("igual")) {
+				contador = 5;
+			}
 			contador++;
 		}
 
