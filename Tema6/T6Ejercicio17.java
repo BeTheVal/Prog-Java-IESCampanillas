@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class T6Ejercicio17 {
 	public static void main(String[] args) {
 		/*
@@ -9,5 +11,11 @@ public class T6Ejercicio17 {
 		 * situado en cualquiera de las posiciones que quedan en el hueco que forma el
 		 * rectángulo.
 		 */
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Introduzca la altura de la pecera : ");
+		int alturaPecera = sc.nextInt();
+		System.out.print("Introduzca la anchura de la pecera : ");
+		int anchuraPecera = sc.nextInt();
+
 	}
 }
