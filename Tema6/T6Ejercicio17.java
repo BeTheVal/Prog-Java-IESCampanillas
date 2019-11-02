@@ -38,7 +38,7 @@ public class T6Ejercicio17 {
 			System.out.println("*"); // parte derecha de la pecera
 		} // for i
 
-		// Pinta la parte inferior /////////////////////////////////////////////////
+		// Pinta la parte inferior
 		for (int i = 0; i < anchuraPecera; i++) {
 			System.out.print("*");
 		}
