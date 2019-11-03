@@ -14,6 +14,9 @@ public class T6Ejercicio19 {
 		int aleatorio = 0;
 		for (int i = 0; i < 50; i++) {
 			aleatorio = (int) ((Math.random() * 300) - 101);
+			if (i == 49) {
+				System.out.print(aleatorio);
+			}
 			System.out.print(aleatorio + ",");
 			if (aleatorio % 2 == 0) {
 				contadorpositivos++;
