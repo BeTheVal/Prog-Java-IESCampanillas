@@ -10,5 +10,30 @@ public class T6Ejercicio22 {
      * una posición a la derecha del anterior. La longitud de la serpiente se pedirá
      * por teclado y se supone que el usuario introducirá un dato correcto.
      */
+    System.out.print("Por favor, introduzca la longitud de la serpiente en ");
+    System.out.print("caracteres contando la cabeza: ");
+    int longitud = Integer.parseInt(System.console().readLine());
+
+    // pinta la cabeza
+    System.out.println("            @");
+
+    // pinta el cuerpo
+    int i;
+    int x = 13;
+
+    while (longitud > 1) {
+      // suma -1, 0 o 1 a la variable x
+      x += (int) (Math.random() * 3) - 1;
+
+      // pinta x - 1 espacios
+      for (i = 1; i < x; i++) {
+        System.out.print(" ");
+      }
+
+      // pinta el cuerpo
+      System.out.println("#");
+
+      longitud--;
+    }
   }
 }
