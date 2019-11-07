@@ -13,7 +13,7 @@ public class T7Ejercicio1 {
     num[6] = 14;
     num[8] = 5;
     num[9] = 120;
-    for (int i = 0; i <= 12; i++) {
+    for (int i = 0; i <= 11; i++) {
       System.out.println(num[i]);
     }
 
