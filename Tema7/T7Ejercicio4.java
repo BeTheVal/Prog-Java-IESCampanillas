@@ -16,7 +16,7 @@ public class T7Ejercicio4 {
 		for (int i = 0; i < 20; i++) {
 			numeros[i] = (int) ((Math.random() * 20) + 1);
 			cuadrados[i] = numeros[i] * numeros[i];
-			cubos[i] = numeros[i] * numeros[i] * numeros[i];
+			cubos[i] = cuadrados[i] * numeros[i];
 		}
 
 		System.out.println("  n  │   n²  │    n³\n─────┼───────┼─────────");
