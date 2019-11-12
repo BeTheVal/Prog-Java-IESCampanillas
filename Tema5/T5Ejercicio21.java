@@ -32,6 +32,7 @@ public class T5Ejercicio21 {
                 }
             }
         }
+        sc.close();
         System.out.println("la media de los impares es: " + media + "y el mayor de los pares es: " + mayorPares);
     }
 }

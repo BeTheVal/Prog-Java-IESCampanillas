@@ -28,6 +28,7 @@ public class T7Ejercicio6 {
 		System.out.println("-------------muestra la array--------------");
 		for (int j = 0; j < numerosfinal.length; j++) {
 			System.out.println(numerosfinal[j]);
+			sc.close();
 
 		}
 	}

@@ -34,5 +34,6 @@ public class T7Ejercicio7 {
 			}
 
 		}
+		sc.close();
 	}
 }
