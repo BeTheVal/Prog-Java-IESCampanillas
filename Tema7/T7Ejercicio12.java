@@ -15,7 +15,7 @@ public class T7Ejercicio12 {
 		int numero[] = new int[10];
 		System.out.println("Introduce 10 numeros (introduce número y pulsa ENTER)");
 		for (int i = 0; i < numero.length; i++) {
-			numero[i] = (int) ((Math.random() * 9) + 1);
+			numero[i] = sc.nextInt();
 		}
 		// Mostrando la primera array
 
