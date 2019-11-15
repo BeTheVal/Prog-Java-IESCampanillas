@@ -20,6 +20,7 @@ public class T7Ejercicio13 {
 		System.out.println();
 		System.out.print("¿Quieres destacar el máximo?(s o n)");
 		String recibirMax = sc.nextLine();
+
 		if (recibirMax.equals("s")) {
 			for (int i = 0; i < numero.length; i++) {
 				if (numero[i] > maximoNumero) {
@@ -42,6 +43,7 @@ public class T7Ejercicio13 {
 				if (numero[i] < maximoNumero) {
 					minimoNumero = numero[i];
 				}
+			sc.close();
 			}
 			for (int i = 0; i < numero.length; i++) {
 				System.out.print(numero[i] + " ");

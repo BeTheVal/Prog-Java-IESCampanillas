@@ -30,6 +30,7 @@ public class T7Ejercicio12 {
 			System.out.printf("│%4d ", numero[i]);
 		}
 		System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+		sc.close();
 
 		// Rotación de números en array
 		int inicial = 0;

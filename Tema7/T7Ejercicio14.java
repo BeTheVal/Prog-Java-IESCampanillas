@@ -18,6 +18,7 @@ public class T7Ejercicio14 {
 		for (int i = 0; i < palabras.length; i++) {
 			palabras[i] = sc.nextLine();
 		}
+		sc.close();
 		int contador = 0;
 		int control = 7;
 		for(int x=0;x<colores.length;x++) {

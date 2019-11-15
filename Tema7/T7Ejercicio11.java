@@ -10,6 +10,7 @@ public class T7Ejercicio11 {
 		 * son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar
 		 * el array resultante.
 		 */
+		Scanner sc = new Scanner(System.in);
 		int[] n = new int[10];
 		int[] primo = new int[10];
 		int[] noPrimo = new int[10];
@@ -22,7 +23,7 @@ public class T7Ejercicio11 {
 		System.out.println("Introduzca 10 números separados por INTRO:");
 
 		for (i = 0; i < 10; i++) {
-			n[i] = Integer.parseInt(System.console().readLine());
+			n[i] = sc.nextInt();
 
 			// Comprueba si el número es o no primo.
 			esPrimo = true;
@@ -40,6 +41,7 @@ public class T7Ejercicio11 {
 				noPrimo[noPrimos++] = n[i];
 			}
 		}
+		sc.close();
 
 		// Muestra el array original
 		System.out.println("\n\nArray original:");
