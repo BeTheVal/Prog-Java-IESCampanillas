@@ -19,30 +19,25 @@ public class T6Ejercicio31 {
     Scanner sc = new Scanner(System.in);
     System.out.println("Introduce la cantidad de metros que tiene el sendero: ");
     int metros = sc.nextInt();
-    int espaciosDentro = (int) ((Math.random() * 3) + 1);
-
+    String obstaculo = "*";
     for (int i = 0; i < metros; i++) {
-      int obstaculo = (int) (Math.random() * 3);
-      int tipoObstaculo = (int) (Math.random() * 3);
-      for (int j = 0; j < 1; j++) {
-        for (int j2 = 0; j2 < obstaculo; j2++) {
-          System.out.print(" ");
-        }
-        System.out.print("|");
-        for (int j2 = 0; j2 < espaciosDentro; j2++) {
-          System.out.print(" ");
-        }
-        // Imprimimos tipo de obstaculo
-        if (tipoObstaculo == 0) {
-          System.out.print("*");
-        } else if (tipoObstaculo == 1) {
-          System.out.print("o");
-        } else {
-          System.out.print(" ");
-        }
-        System.out.println("|");
+      int espaciosAntesdePintar = (int) ((Math.random() * 2) + 1);
+      for (int j = 0; j < espaciosAntesdePintar; j++) {
+        System.out.print(" "); // Pinta los desplazamientos del carril
       }
-
+      System.out.print("|");
+      int espacioInterno = (int) ((Math.random() * 4));
+      for (int j = 0; j < espacioInterno; j++) {
+        System.out.print(" ");
+      }
+      if (espacioInterno == 4) {
+        System.out.print(" ");
+      }
+      System.out.print(obstaculo);
+      for (int j = 0; j < 4 - espacioInterno; j++) {
+        System.out.print(" ");
+      }
+      System.out.println("|");
     }
   }
 }
