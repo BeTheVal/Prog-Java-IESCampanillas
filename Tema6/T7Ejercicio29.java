@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-import sun.security.provider.JavaKeyStore.CaseExactJKS;
-
-public class T7Ejercicio28 {
+public class T7Ejercicio29 {
     public static void main(String[] args) {
         /*
          * Realiza un programa que muestre la previsión del tiempo para mañana en
@@ -22,19 +20,57 @@ public class T7Ejercicio28 {
         int estacion = sc.nextInt();
         int tempMaxima;
         int tempoMinima;
+        int soleadoNublado = (int) ((Math.random() * 100) + 1);
+
+        System.out.println("Previsión del tiempo para mañana: ");
+        System.out.println("----------------------------------");
 
         switch (estacion) {
         case 1:
-
+            tempMaxima = (int) ((Math.random() * 15) + 15);
+            tempoMinima = (int) (Math.random() * 15);
+            System.out.println("Temperatura mínima = " + tempoMinima + " ºC");
+            System.out.println("Temperatura mínima = " + tempMaxima + " ºC");
+            if (soleadoNublado <= 40) {
+                System.out.println("Nublado");
+            } else {
+                System.out.println("Soleado");
+            }
             break;
 
         case 2:
-
+            tempMaxima = (int) ((Math.random() * 20) + 25);
+            tempoMinima = (int) (Math.random() * 25);
+            System.out.println("Temperatura mínima = " + tempoMinima + " ºC");
+            System.out.println("Temperatura mínima = " + tempMaxima + " ºC");
+            if (soleadoNublado <= 20) {
+                System.out.println("Nublado");
+            } else {
+                System.out.println("Soleado");
+            }
             break;
         case 3:
+            tempMaxima = (int) ((Math.random() * 10) + 20);
+            tempoMinima = (int) (Math.random() * 20);
+            System.out.println("Temperatura mínima = " + tempoMinima + " ºC");
+            System.out.println("Temperatura mínima = " + tempMaxima + " ºC");
+            if (soleadoNublado <= 60) {
+                System.out.println("Nublado");
+            } else {
+                System.out.println("Soleado");
+            }
 
             break;
         case 4:
+            tempMaxima = (int) (Math.random() * 25);
+            tempoMinima = (int) ((Math.random() * 15) + 15);
+            System.out.println("Temperatura mínima = " + tempoMinima + " ºC");
+            System.out.println("Temperatura mínima = " + tempMaxima + " ºC");
+            if (soleadoNublado <= 80) {
+                System.out.println("Nublado");
+            } else {
+                System.out.println("Soleado");
+            }
 
             break;
 
