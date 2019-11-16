@@ -17,12 +17,28 @@ public class T7Ejercicio15 {
          * nuevos clientes se debe mostrar el estado de las mesas. Los grupos no se
          * pueden romper aunque haya huecos sueltos suficientes.
          */
+        Scanner sc = new Scanner(System.in);
         int mesa[] = new int[10];
         boolean lleno = false;
+        int contador = 0;
         while (!lleno) {
-            System.out.println("funciona");
-            if 
+            System.out.println("¿Cuantos son? :");
+            int comensales = sc.nextInt();
+            if (comensales > 4) {
+                System.out.println("Lo siento, no admitimos grupos de " + comensales
+                        + " , haga grupos de 4 personas como máximo e intente de nuevo");
+            }
+            if (mesa[contador] == 4) {
+                contador++;
+            }
+            mesa[contador] += comensales;
+            System.out.println("Todos a la mesa: " + (contador + 1));
+
+            if (comensales == 0 || mesa[9] == 4) {
+                lleno = true;
+            }
         }
+        sc.close();
 
     }
 
