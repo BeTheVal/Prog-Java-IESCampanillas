@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class T7Ejercicio29 {
+public class T6Ejercicio29 {
     public static void main(String[] args) {
         /*
          * Realiza un programa que muestre la previsión del tiempo para mañana en
