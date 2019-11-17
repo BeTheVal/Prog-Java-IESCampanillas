@@ -8,5 +8,13 @@ public class T7BEjercicio2 {
 		 */
 		int[][] num = new int[4][5];
 
+		for (int i = 0; i < num.length; i++) {
+			System.out.println(num[i][i]);
+			if (contador == 3) {
+				contador = 0;
+
+			}
+		}
+
 	}
 }
