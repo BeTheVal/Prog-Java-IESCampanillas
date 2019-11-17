@@ -1,3 +1,5 @@
+import java.java.util.Scanner;
+
 public class T7BEjercicio2 {
 	public static void main(String[] args) {
 		/*
@@ -6,15 +8,43 @@ public class T7BEjercicio2 {
 		 * sumas parciales de filas y columnas igual que si de una hoja de cálculo se
 		 * tratara. La suma total debe aparecer en la esquina inferior derecha.
 		 */
+		java.util.Scanner sc = new java.util.Scanner(System.in);
 		int[][] num = new int[4][5];
-
-		for (int i = 0; i < num.length; i++) {
-			System.out.println(num[i][i]);
-			if (contador == 3) {
-				contador = 0;
-
+		int[] suma = new int[4];
+		int fila = 0;
+		int columna = 0;
+		for (int i = 0; i < 20; i++) {
+			System.out.println("Inserte el numero para: fila  " + (fila + 1) + " columna " + (columna + 1));
+			num[fila][columna] = sc.nextInt();
+			columna++;
+			if (columna == 5) {
+				fila++;
+				columna = 0;
 			}
 		}
-
+		fila = 0;
+		columna = 0;
+		for (int i = 0; i < 20; i++) {
+			suma[i] += num[fila][columna];
+			if (columna == 5) {
+				fila++;
+				columna = 0;
+			}
+			if (suma[3] > 1) {
+				break;
+			}
+		}
+		fila = 0;
+		columna = 0;
+		for (int i = 0; i < 20; i++) {
+			System.out.print(" " + num[fila][columna] + " ");
+			columna++;
+			if (columna == 5) {
+				System.out.print(" suma = " + suma[i]);
+				System.out.println();
+				fila++;
+				columna = 0;
+			}
+		}
 	}
 }
