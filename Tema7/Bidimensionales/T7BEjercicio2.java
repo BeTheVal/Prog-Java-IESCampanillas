@@ -15,7 +15,7 @@ public class T7BEjercicio2 {
 		// Pidiendo los números
 		for (int i = 0; i < 20; i++) {
 			System.out.println("Inserte el numero para: fila  " + (fila + 1) + " columna " + (columna + 1));
-			num[fila][columna] = (int) ((Math.random() * 10) + 1); // sc.nextInt();
+			num[fila][columna] = sc.nextInt();
 			columna++;
 			if (columna == 5) {
 				fila++;
