@@ -28,10 +28,11 @@ public class T7Ejercicio17 {
 
       }
     }
+    int numeroIntroducido;
 
     do {
       System.out.println("Introduzca el número a mover:");
-      int numeroIntroducido = sc.nextInt();
+      numeroIntroducido = sc.nextInt();
       // Comprobación de número
       for (int i = 0; i < num.length; i++) {
         if (num[i] == numeroIntroducido) {
@@ -39,5 +40,17 @@ public class T7Ejercicio17 {
         }
       }
     } while (!existeNumero);
+
+    int auxiliar = numeroIntroducido;
+    for (int i = 0; i < num.length; i++) {
+
+    }
   }
 }
+/*
+ * Desplazamiento con valor auxiliar
+ * 
+ * 1º Declarar una variable para guardar valores 2º guardar el ultimo numero en
+ * esa variable 3º Desplazar todos los numeros 4º meter la variable en el primer
+ * lugar
+ */
