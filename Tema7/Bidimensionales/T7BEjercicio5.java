@@ -6,8 +6,7 @@ public class T7BEjercicio5 {
 		 * continuación, el programa deberá dar la posición tanto del máximo como del
 		 * mínimo.
 		 */
-		// Generar la array con los numeros aleatorios, recorrer la array para buscar el
-		// maximo, recorrer la array para buscar la posicion del maximo.
+
 		int[][] num = new int[6][10];
 		int numeroMayor = 0;
 		int numeroMenor = 1001;
