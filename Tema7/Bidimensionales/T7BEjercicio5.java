@@ -8,6 +8,35 @@ public class T7BEjercicio5 {
 		 */
 		// Generar la array con los numeros aleatorios, recorrer la array para buscar el
 		// maximo, recorrer la array para buscar la posicion del maximo.
+		int[][] num = new int[6][10];
+		int numeroMayor = 0;
+		int numeroMenor = 1001;
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
+				num[i][j] = (int) (Math.random() * 1000);
+				if (num[i][j] > numeroMayor) {
+					numeroMayor = num[i][j];
+				}
+				if (num[i][j] < numeroMenor) {
+					numeroMenor = num[i][j];
+				}
+			}
+		}
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
+				if (num[i][j] == numeroMayor) {
+					System.out.println("El número mayor está en: " + i + "," + j);
 
+				}
+			}
+		}
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num.length; j++) {
+				if (num[i][j] == numeroMenor) {
+					System.out.println("El número menor está en: " + i + "," + j);
+
+				}
+			}
+		}
 	}
 }
