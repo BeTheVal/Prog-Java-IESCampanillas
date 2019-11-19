@@ -18,6 +18,7 @@ public class T7BEjercicio2 {
 				System.out.println();
 			}
 		}
+		sc.close();
 		// Mostrar la array
 		int suma = 0;
 		for (int i = 0; i < num.length; i++) {
