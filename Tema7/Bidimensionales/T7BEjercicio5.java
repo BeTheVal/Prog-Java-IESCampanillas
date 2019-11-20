@@ -13,9 +13,18 @@ public class T7BEjercicio5 {
 		for (int i = 0; i < num.length; i++) {
 			for (int j = 0; j < num[0].length; j++) {
 				num[i][j] = (int) (Math.random() * 1000);
+			}
+		}
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
 				if (num[i][j] > numeroMayor) {
 					numeroMayor = num[i][j];
 				}
+			}
+		}
+
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num.length; j++) {
 				if (num[i][j] < numeroMenor) {
 					numeroMenor = num[i][j];
 				}

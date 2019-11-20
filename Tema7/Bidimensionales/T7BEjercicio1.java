@@ -14,16 +14,11 @@ public class T7BEjercicio1 {
 		num[2][3] = 9;
 		num[1][4] = 0;
 		num[2][5] = 11;
-		int contador = 0;
-		for (int j = 0; j < 6; j++) {
-			for (int i = 0; i < 6; i++) {
-				System.out.print(" " + num[contador][i] + " ");
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
+				System.out.print(" " + num[i][j] + " ");
 			}
-			contador++;
-			if (contador == 6) {
-				System.out.println();
-				contador = 0;
-			}
+			System.out.println();
 		}
 
 	}

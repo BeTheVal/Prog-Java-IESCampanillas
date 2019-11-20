@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TB7Ejercicio8 {
+public class T7BEjercicio8 {
   public static void main(String[] args) {
     /*
      * Escribe un programa que, dada una posición en un tablero de ajedrez, nos diga
@@ -15,6 +15,7 @@ public class TB7Ejercicio8 {
     System.out.print("Fila : ");
     int fila = sc.nextInt();
     System.out.print("Letra: ");
-    int letra = sc.nextInt();
+    String letra = sc.nextLine();
+
   }
 }

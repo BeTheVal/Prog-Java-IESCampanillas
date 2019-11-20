@@ -1,4 +1,4 @@
-import java.java.util.Scanner;
+import java.util.Scanner;
 
 public class T7BEjercicio2 {
 	public static void main(String[] args) {
@@ -8,37 +8,29 @@ public class T7BEjercicio2 {
 		 * sumas parciales de filas y columnas igual que si de una hoja de cálculo se
 		 * tratara. La suma total debe aparecer en la esquina inferior derecha.
 		 */
-		java.util.Scanner sc = new java.util.Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int[][] num = new int[4][5];
-		int fila = 0;
-		int columna = 0;
-		// Pidiendo los números
-		for (int i = 0; i < 20; i++) {
-			System.out.println("Inserte el numero para: fila  " + (fila + 1) + " columna " + (columna + 1));
-			num[fila][columna] = sc.nextInt();
-			columna++;
-			if (columna == 5) {
-				fila++;
-				columna = 0;
+		// Pedir los números e introducirlos en la array
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
+				System.out.print("Inserte número: ");
+				num[i][j] = sc.nextInt();
+				System.out.println();
 			}
 		}
-		// Pintando los números
-		fila = 0;
-		columna = 0;
-		int contador = 0;
-		int[] filaSuma = new int[4];
+		sc.close();
+		// Mostrar la array
 		int suma = 0;
-		for (int i = 0; i < 20; i++) {
-			System.out.print(" " + num[fila][columna] + " ");
-			suma += num[fila][columna];
-			columna++;
-			if (columna == 5) {
-				System.out.print(" suma = " + suma);
-				suma = 0;
-				System.out.println();
-				fila++;
-				columna = 0;
+		for (int i = 0; i < num.length; i++) {
+			for (int j = 0; j < num[0].length; j++) {
+				System.out.print(" " + num[i][j] + " ");
+				suma += num[i][j];
+				if (j == 4) {
+					System.out.print("Suma = " + suma);
+					suma = 0;
+				}
 			}
+			System.out.println();
 		}
 	}
 }
