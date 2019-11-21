@@ -1,4 +1,3 @@
-import javax.print.attribute.standard.Media;
 
 public class T7BEjercicio11 {
   public static void main(String[] args) {
@@ -13,28 +12,33 @@ public class T7BEjercicio11 {
     for (int i = 0; i < num.length; i++) {
       for (int j = 0; j < num[0].length; j++) {
         num[i][j] = (int) ((Math.random() * 100) + 200);
+        System.out.print(" " + num[i][j] + " ");
       }
+      System.out.println();
     }
     int fila = 0;
     int columna = 0;
-    int minimo = 301;
+    int aux = 0;
+    int min = 901;
     int maximo = 0;
     int suma = 0;
-    for (fila = 0; fila < num.length; fila++) {
-      for (columna = 0; columna < num[0].length; columna++) {
-        System.out.println(num[fila][columna]);
-        suma += num[fila][columna];
-        if (num[fila][columna] < minimo) {
-          minimo = num[fila][columna];
-        }
-        if (num[fila][columna] > maximo) {
-          maximo = num[fila][columna];
-        }
-
+    for (int i = 0; i < num.length; i++) {
+      System.out.println(num[fila][columna]);
+      aux = num[fila][columna];
+      suma += aux;
+      if (aux > maximo) {
+        maximo = aux;
       }
+      if (aux < min) {
+        min = aux;
+      }
+      columna++;
+      fila++;
+
     }
+
     System.out.println("Media = " + (suma / 10));
-    System.out.println("Mínimo = " + minimo);
+    System.out.println("Mínimo = " + min);
     System.out.println("Máximo = " + maximo);
   }
 }

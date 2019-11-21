@@ -45,7 +45,13 @@ public class T7BEjercicio8 {
     default:
       break;
     }
-    System.out.print("posicion : " + fila + "," + columna);
+    System.out.println("posicion : " + fila + "," + columna);
+    int aux = fila;
+    for (int i = 0; i < aux; i++) {
+      fila--;
+      columna--;
+      System.out.println(fila + ", " + columna);
+    }
 
   }
 }
