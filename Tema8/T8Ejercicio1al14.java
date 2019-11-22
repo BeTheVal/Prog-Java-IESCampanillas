@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class T8Ejercicio1al14 {
   public static void main(String[] args) {
     /*
@@ -24,5 +25,7 @@ public class T8Ejercicio1al14 {
      * final dentro de un número y devuelve el trozo correspondiente. 14.
      * juntaNumeros: Pega dos números para formar uno.
      */
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Elige lo que quieres hacer : ");
   }
 }
