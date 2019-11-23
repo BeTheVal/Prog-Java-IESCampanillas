@@ -57,17 +57,27 @@ public class T8Ejercicio1al14 {
 
       break;
     case 3:
-      System.out.print("Introduce el númeor y te digo el siguiente primo: ");
+      System.out.print("Introduce el número y te digo el siguiente primo: ");
       numero = sc.nextInt();
+      System.out.println("El siguiente primo es " + siguientePrimo(numero));
 
       break;
     case 4:
-
+      System.out.print("Introduce una base : ");
+      int base = sc.nextInt();
+      System.out.print("Introduce un exponente: ");
+      int exponente = sc.nextInt();
+      System.out.println("El resultado de la potencia es : " + potencia(base, exponente));
       break;
     case 5:
-
+      System.out.println("Introduce el número al que contarle los digitos : ");
+      numero = sc.nextInt();
+      System.out.println("El numero introducido tiene " + digitos(numero));
       break;
     case 6:
+      System.out.println("Introduce el número a voltear: ");
+      numero = sc.nextInt();
+      System.out.println("El número volteado es: " + voltea(numero));
 
       break;
     case 7:
@@ -142,7 +152,56 @@ public class T8Ejercicio1al14 {
    */
   public static int siguientePrimo(int x) {
     while (!esPrimo(++x)) {
-      return x;
     }
+    ;
+
+    return x;
+  }
+
+  /**
+   * potencia: Dada una base y un exponente devuelve la potencia.
+   */
+  public static double potencia(int x, int y) {
+    double resultado = Math.pow(x, y);
+    return resultado;
+
+  }
+
+  /**
+   * digitos: Cuenta el número de dígitos de u número entero.
+   */
+  public static long digitos(long x) {
+    if (x < 0) {
+      x = -x;
+    }
+    if (x == 0) {
+      return 1;
+    }
+    int contador = 0;
+    do {
+      x = (x / 10);
+      contador++;
+    } while (x != 0);
+    return contador;
+  }
+
+  /**
+   * voltea: Le da la vuelta a un número.
+   */
+  public static int voltea(int x) {
+    int volteado = 0;
+    while (x > 0) {
+      volteado = (volteado * 10) + (x % 10);
+      x /= 10;
+    }
+    return volteado;
+
+  }
+
+  /**
+   * digitoN: Devuelve el dígito que está en la posición n de un número entero
+   */
+  public static int digitoN(long x) {
+
   }
 }
