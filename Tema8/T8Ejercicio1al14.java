@@ -32,15 +32,33 @@ public class T8Ejercicio1al14 {
         "1.Es Capicua\n2.Es Primo\n3.Siguiente Primo\n4.potencia\n5.Cuenta digitos\n6.Voltea\n7.Digito en\n8.Posicion de digito\n9.Quita por detras\n10.Quita por delante\n11.Pega por detras\n12.Pega por delante\n13.Trozo de Numero\n14.Junta números");
     System.out.print("Introduce número: ");
     int eleccion = sc.nextInt();
+    int numero;
 
     switch (eleccion) {
     case 1:
+      System.out.print("Introduce el número para saber si es capicua: ");
+      numero = sc.nextInt();
+      if (esCapicua(numero)) {
+        System.out.println("El " + numero + " es capicúa");
+      } else {
+        System.out.println("El " + numero + " no es capicúa");
+
+      }
 
       break;
     case 2:
+      System.out.print("Introduce el número para saber si es primo: ");
+      numero = sc.nextInt();
+      if (esPrimo(numero)) {
+        System.out.println("El numero " + numero + " es primo.");
+      } else {
+        System.out.println("El numero " + numero + " no es primo.");
+      }
 
       break;
     case 3:
+      System.out.print("Introduce el númeor y te digo el siguiente primo: ");
+      numero = sc.nextInt();
 
       break;
     case 4:
@@ -83,21 +101,48 @@ public class T8Ejercicio1al14 {
 
   /////////////////////////////////////////////////// Funciones//////////////////////////////////////
   /**
-   * Comprueba si un número es capicua o no.
+   * ES CAPICUA Comprueba si un número es capicua o no.
    */
-  public static boolean esCapicua(Long numero) {
+  public static boolean esCapicua(int x) {
 
-    long volteado = 0;
+    int volteado = 0;
+    int aux = x;
 
-    while (numero > 0) {
-      volteado = (volteado * 10) + (numero % 10);
-      numero /= 10;
+    while (x > 0) {
+      volteado = (volteado * 10) + (x % 10);
+      x /= 10;
     } // while
 
-    if (volteado == numeroIntroducido) {
-      System.out.println("El " + numeroIntroducido + " es capicúa");
+    if (volteado == aux) {
+      return true;
     } else {
-      System.out.println("El " + numeroIntroducido + " no es capicúa");
+      return false;
+    }
+  }
+
+  /**
+   * ES PRIMO Devuelve verdadero si el número que se pasa como parámetro es primo
+   * y falso en caso contrario
+   */
+  public static boolean esPrimo(int x) {
+    for (int i = 2; i < x; i++) {
+      if ((x % i) == 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Devuelve el siguiente primo despues del que se le pasa como parámetro.
+   * 
+   * 
+   */
+  public static int siguientePrimo(int x) {
+    while (!esPrimo(++x)) {
+      return x;
     }
   }
 }
