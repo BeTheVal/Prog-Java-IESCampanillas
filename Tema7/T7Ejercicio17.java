@@ -41,7 +41,6 @@ public class T7Ejercicio17 {
         }
       }
     } while (!existeNumero);
-    int auxiliar;
 
     while (num[0] != numeroIntroducido) {
       int aux = num[9];
