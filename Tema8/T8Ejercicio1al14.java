@@ -33,6 +33,7 @@ public class T8Ejercicio1al14 {
     System.out.print("Introduce número: ");
     int eleccion = sc.nextInt();
     int numero;
+    long largonumero;
 
     switch (eleccion) {
     case 1:
@@ -81,7 +82,11 @@ public class T8Ejercicio1al14 {
 
       break;
     case 7:
-
+      System.out.print("Introduce el número del que elegir el dígito: ");
+      numero = sc.nextInt();
+      System.out.print("Introduce la posición: ");
+      eleccion = sc.nextInt();
+      System.out.println("El digito que está en la posición " + eleccion + " es: " + digitoN(numero, eleccion));
       break;
     case 8:
 
@@ -201,7 +206,21 @@ public class T8Ejercicio1al14 {
   /**
    * digitoN: Devuelve el dígito que está en la posición n de un número entero
    */
-  public static int digitoN(long x) {
+  public static int digitoN(int x, int n) {
+    x = voltea(x);
+
+    while (n-- > 1) {
+      x = x / 10;
+    }
+
+    return x % 10;
+  }
+
+  /**
+   * posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro
+   * de un número entero. Si no se encuentra, devuelve -1.
+   */
+  public static int posicionDeDigito(int x, int y) {
 
   }
 }
