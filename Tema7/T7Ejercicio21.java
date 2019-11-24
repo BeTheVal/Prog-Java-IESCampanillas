@@ -9,7 +9,7 @@ public class T7Ejercicio21 {
 		 */
 		int[] numero = new int[15];
 		for (int i = 0; i < numero.length; i++) {
-			numero[i] = (int) (Math.random() * 500);
+			numero[i] = (int) (Math.random() * 500); // Asignar numeros aleatorios al array
 
 		}
 		System.out.println("Array Original");
@@ -17,12 +17,15 @@ public class T7Ejercicio21 {
 			System.out.print(" " + i + " ");
 		}
 		System.out.println();
+		System.out.println();
+
 		System.out.println("Array Cincuarizada");
 		for (int i = 0; i < numero.length; i++) {
 			if (numero[i] % 5 == 0) {
-				System.out.print(" " + numero[i] + 5 + " ");
+				System.out.print(" " + (numero[i] + 5) + " "); // Suma 5 a los múltiplos
+			} else {
+				System.out.print(" " + numero[i] + " ");
 			}
-			System.out.print(" " + numero[i] + " ");/// PENDIENTE DE CORREGIR///
 		}
 
 	}

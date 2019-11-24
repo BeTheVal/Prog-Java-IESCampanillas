@@ -21,14 +21,16 @@ public class T7Ejercicio20 {
 			rey[i] = sc.next();
 		}
 		for (int i = 0; i < rey.length; i++) {
-			for (int j = 0; j < rey.length; j++) {
-				if (rey[i].equals(rey[j])) {
-					System.out.println(rey[i] + contador + "º"); // A corregir
-					contador++;
-				}
+			if (rey[i].equals(rey[j])) {
+				System.out.println(rey[i] + contador + "º"); // A corregir
+				contador++;
+			} else {
+				System.out.println(rey[i] + "1º");
+			}
+			for (int j = 1; j < rey.length; j++) {
 
 			}
-			System.out.println(rey[i] + "1º");
+
 		}
 	}
 }
