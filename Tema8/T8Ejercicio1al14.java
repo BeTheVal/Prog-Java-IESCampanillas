@@ -33,7 +33,6 @@ public class T8Ejercicio1al14 {
     System.out.print("Introduce número: ");
     int eleccion = sc.nextInt();
     int numero;
-    long largonumero;
 
     switch (eleccion) {
     case 1:
@@ -89,6 +88,7 @@ public class T8Ejercicio1al14 {
       System.out.println("El digito que está en la posición " + eleccion + " es: " + digitoN(numero, eleccion));
       break;
     case 8:
+<<<<<<< HEAD
       System.out.println("Introduce el número: ");
       numero = sc.nextInt();
       System.out.println("Introduce el número para decirte su posición: ");
@@ -110,15 +110,54 @@ public class T8Ejercicio1al14 {
       System.out.print("Cantidad de de numeros a quitar por detrás: ");
       aQuitar = sc.nextInt();
       System.out.println("El resultado final es " + quitaPorDetras(numero, aQuitar));
+=======
+      System.out.println("Inserte el número donde buscar: ");
+      numero = sc.nextInt();
+      System.out.println("Inserte el número que buscar: ");
+      int aBuscar = sc.nextInt();
+      System.out.println("Está en la posición : " + posicionDeDigito(numero, aBuscar));
+
+      break;
+    case 9:
+      System.out.println("Inserte el número a quitar números: ");
+      numero = sc.nextInt();
+      System.out.println("Inserte la cantidad de numeros que quitar");
+      int aQuitar = sc.nextInt();
+      System.out.println("El número resultante es: " + quitaPorDetras(numero, aQuitar));
+
+      break;
+    case 10:
+      System.out.println("Introduce el número a quitar por delante:");
+      numero = sc.nextInt();
+      System.out.println("Introduce la cantidad de números a quitar por delante");
+      aQuitar = sc.nextInt();
+      System.out.println("El número resultante es: " + quitaPorDelante(numero, aQuitar));
+>>>>>>> 83dc6940ec295d75c9aab559ba63390f3f54c12b
 
       break;
     case 11:
+      System.out.println("Introduce el primer número:");
+      numero = sc.nextInt();
+      System.out.println("Introduce el número a pegar");
+      int aPegar = sc.nextInt();
+      System.out.println("El resultado es: " + pegaPorDetras(numero, aPegar));
 
       break;
     case 12:
-
+      System.out.println("Introduce el primer número:");
+      numero = sc.nextInt();
+      System.out.println("Introduce el número a pegar");
+      aPegar = sc.nextInt();
+      System.out.println("El resultado es: " + pegaPorDelante(numero, aPegar));
       break;
     case 13:
+      System.out.println("Introduce el numero a trocear : ");
+      numero = sc.nextInt();
+      System.out.println("Introduce la posición inicial: ");
+      int inicial = sc.nextInt();
+      System.out.println("Introduce la posición final: ");
+      int posFinal = sc.nextInt();
+      System.out.println("El resultado es: " + trozoDeNumero(numero, inicial, posFinal));
 
       break;
     case 14:
@@ -235,12 +274,88 @@ public class T8Ejercicio1al14 {
    * posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro
    * de un número entero. Si no se encuentra, devuelve -1.
    */
+<<<<<<< HEAD
   public static int posicionDeDigito(int x, int d) {
     int i;
 
     for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {
     }
     ;
+=======
+  public static int posicionDeDigito(int x, int y) {
+    int i;
+
+    for (i = 0; (i < digitos(x)) && (digitoN(x, i) != y); i++) {
+    }
+    ;
+
+    if (i == digitos(x)) {
+      return -1;
+    } else {
+      return i;
+    }
+
+  }
+
+  /**
+   * 9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la
+   * derecha).
+   */
+  public static int quitaPorDetras(int x, int y) {
+    for (int i = 0; i < y; i++) {
+      x = x / 10;
+    }
+    return x;
+
+  }
+
+  /**
+   * 10. quitaPorDelante: Le quita a un número n dígitos por delante (por la
+   * izquierda).
+   */
+  public static int quitaPorDelante(int x, int y) {
+    x = voltea(x);
+    for (int i = 0; i < y; i++) {
+      x = x / 10;
+    }
+    return voltea(x);
+
+  }
+
+  /**
+   * 11. pegaPorDetras: Añade un dígito a un número por detrás.
+   */
+  public static int pegaPorDetras(int x, int y) {
+    String sX = String.valueOf(x);
+    String sY = String.valueOf(y);
+    String res = sX + sY;
+    int resultado = Integer.parseInt(res);
+    return resultado;
+  }
+
+  /**
+   * 12.pegaPorDelante: Añade un dígito a un número por delante.
+   * 
+   */
+  public static int pegaPorDelante(int x, int y) {
+    String sX = String.valueOf(x);///////////Hay que voltear y después pegar/////
+    String sY = String.valueOf(y);
+    String res = sX + sY;
+    int resultado = Integer.parseInt(res);
+    return resultado;
+   
+   /* 13. trozoDeNumero: Toma como parámetros las posiciones inicial y final dentro de
+   * un número y devuelve el trozo correspondiente.
+   */
+  public static int trozoDeNumero(int x, int y, int z) {
+
+  }
+
+  /**
+   * 14. juntaNumeros: Pega dos números para formar uno.
+   */
+  public int juntaNumeros(int x, int y) {
+>>>>>>> 83dc6940ec295d75c9aab559ba63390f3f54c12b
 
     if (i == digitos(x)) {
       return -1;

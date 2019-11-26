@@ -18,6 +18,29 @@ public class T7Ejercicio19 {
 			numero[i] = (int) (Math.random() * 200);
 		}
 		// Muestra el array
+		System.out.println("\nArray Original:");
+
+		System.out.print("\nÍndice ");
+
+		for (int i = 0; i < 12; i++) {
+			System.out.printf("%4d ", i);
+		}
+
+		System.out.print("\nValor  ");
+
+		for (int i = 0; i < 12; i++) {
+			System.out.printf("%4d ", numero[i]);
+		}
+		System.out.println();
+		System.out.print("¿Que número quiere insertar?: ");
+		int insertar = sc.nextInt();
+		System.out.println("¿En que posición quiere insertar el número?");
+		int posicion = sc.nextInt();
+		for (int i = 11; i > posicion; i--) {
+			numero[i] = numero[i - 1];
+		}
+		numero[posicion] = insertar;
+		// Muestra el array
 		System.out.println("\nArray resultado:");
 
 		System.out.print("\nÍndice ");
@@ -31,15 +54,5 @@ public class T7Ejercicio19 {
 		for (int i = 0; i < 12; i++) {
 			System.out.printf("%4d ", numero[i]);
 		}
-		System.out.print("¿Que número quiere insertar?: ");
-		int insertar = sc.nextInt();
-		System.out.println("¿En que posición quiere insertar el número?");
-		int posicion = sc.nextInt();
-		int[] aux = new int[(12 - (posicion + 1))];
-		for (int i = 0; i < aux.length; i++) {
-			numero[posicion+1] = aux[i]; /////// Pendiente de corregir//////////
-		}
-		foi
-
 	}
 }
