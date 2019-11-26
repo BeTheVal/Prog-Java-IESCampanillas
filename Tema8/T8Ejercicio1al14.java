@@ -88,6 +88,29 @@ public class T8Ejercicio1al14 {
       System.out.println("El digito que está en la posición " + eleccion + " es: " + digitoN(numero, eleccion));
       break;
     case 8:
+<<<<<<< HEAD
+      System.out.println("Introduce el número: ");
+      numero = sc.nextInt();
+      System.out.println("Introduce el número para decirte su posición: ");
+      eleccion = sc.nextInt();
+      System.out.println("Está en la posición: " + posicionDeDigito(numero, eleccion));
+
+      break;
+    case 9:
+      System.out.print("Inserta el número: ");
+      numero = sc.nextInt();
+      System.out.print("Cantidad de de numeros a quitar por detrás: ");
+      int aQuitar = sc.nextInt();
+      System.out.println("El resultado final es " + quitaPorDetras(numero, aQuitar));
+
+      break;
+    case 10:
+      System.out.print("Inserta el número: ");
+      numero = sc.nextInt();
+      System.out.print("Cantidad de de numeros a quitar por detrás: ");
+      aQuitar = sc.nextInt();
+      System.out.println("El resultado final es " + quitaPorDetras(numero, aQuitar));
+=======
       System.out.println("Inserte el número donde buscar: ");
       numero = sc.nextInt();
       System.out.println("Inserte el número que buscar: ");
@@ -109,6 +132,7 @@ public class T8Ejercicio1al14 {
       System.out.println("Introduce la cantidad de números a quitar por delante");
       aQuitar = sc.nextInt();
       System.out.println("El número resultante es: " + quitaPorDelante(numero, aQuitar));
+>>>>>>> 83dc6940ec295d75c9aab559ba63390f3f54c12b
 
       break;
     case 11:
@@ -250,6 +274,14 @@ public class T8Ejercicio1al14 {
    * posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro
    * de un número entero. Si no se encuentra, devuelve -1.
    */
+<<<<<<< HEAD
+  public static int posicionDeDigito(int x, int d) {
+    int i;
+
+    for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {
+    }
+    ;
+=======
   public static int posicionDeDigito(int x, int y) {
     int i;
 
@@ -323,6 +355,39 @@ public class T8Ejercicio1al14 {
    * 14. juntaNumeros: Pega dos números para formar uno.
    */
   public int juntaNumeros(int x, int y) {
+>>>>>>> 83dc6940ec295d75c9aab559ba63390f3f54c12b
 
+    if (i == digitos(x)) {
+      return -1;
+    } else {
+      return i;
+    }
   }
+
+  /**
+   * 9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la derecha)
+   */
+  public static int quitaPorDetras(int x, int y) {
+    for (int i = 0; i < y; i++) {
+      x = x / 10;
+    }
+    return x;
+  }
+  /**
+   * 10. quitaPorDelante: Le quita a un número n dígitos por delante (por la
+   * izquierda).
+   */
+  /**
+   * 11. pegaPorDetras: Añade un dígito a un número por detrás.
+   */
+  /**
+   * 12. pegaPorDelante: Añade un dígito a un número por delante.
+   */
+  /**
+   * 13. trozoDeNumero: Toma como parámetros las posiciones inicial y final dentro
+   * de un número y devuelve el trozo correspondiente.
+   */
+  /**
+   * 14.juntaNumeros: Pega dos números para formar uno.
+   */
 }
