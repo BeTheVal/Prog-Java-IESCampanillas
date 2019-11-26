@@ -1,7 +1,6 @@
 package matematicas;
 
-public class mates {
-  /////////////////////////////////////////////////// Funciones//////////////////////////////////////
+public class Mates {
   /**
    * ES CAPICUA Comprueba si un número es capicua o no.
    */
