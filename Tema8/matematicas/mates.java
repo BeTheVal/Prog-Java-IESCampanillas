@@ -1,4 +1,6 @@
-package funciones;
+package matematicas;
+
+public class mates {
   /////////////////////////////////////////////////// Funciones//////////////////////////////////////
   /**
    * ES CAPICUA Comprueba si un número es capicua o no.
@@ -24,7 +26,7 @@ package funciones;
    * ES PRIMO Devuelve verdadero si el número que se pasa como parámetro es primo
    * y falso en caso contrario
    */
-  public static boolean esPrimo (int x) {
+  public static boolean esPrimo(int x) {
     for (int i = 2; i < x; i++) {
       if ((x % i) == 0) {
         return false;
@@ -185,3 +187,4 @@ package funciones;
   public int juntaNumeros(int x, int y) {
     return (x * potencia(10, (int) digitos(y))) + y;
   }
+}
