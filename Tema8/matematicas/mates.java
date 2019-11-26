@@ -54,7 +54,7 @@ public class Mates {
    */
   public static int potencia(int x, int y) {
     double resultado = Math.pow(x, y);
-    return resultado;
+    return (int) resultado;
 
   }
 
@@ -73,7 +73,7 @@ public class Mates {
       x = (x / 10);
       contador++;
     } while (x != 0);
-    return contador;
+    return (long) contador;
   }
 
   /**
@@ -162,19 +162,19 @@ public class Mates {
    * 
    */
   public static int pegaPorDelante(int x, int y) {
-    String sX = String.valueOf(x);/////////// Hay que voltear y después pegar/////
+    String sX = String.valueOf(x);
     String sY = String.valueOf(y);
     String res = sX + sY;
     int resultado = Integer.parseInt(res);
     return resultado;
   }
 
-  /*
+  /**
    * 13. trozoDeNumero: Toma como parámetros las posiciones inicial y final dentro
    * de un número y devuelve el trozo correspondiente.
    */
   public static int trozoDeNumero(int x, int y, int z) {
-    int longitud = digitos(x);
+    int longitud = (int) digitos(x);
     x = quitaPorDelante(x, y);
     x = quitaPorDetras(x, longitud - z - 1);
     return x;
@@ -183,7 +183,7 @@ public class Mates {
   /**
    * 14. juntaNumeros: Pega dos números para formar uno.
    */
-  public int juntaNumeros(int x, int y) {
+  public static int juntaNumeros(int x, int y) {
     return (x * potencia(10, (int) digitos(y))) + y;
   }
 }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import matematicas.Mates;
 
-public class T8Ejercicio1 {
+public class T8Ejercicio1al14 {
   public static void main(String[] args) {
     /*
      * Crea una biblioteca de funciones matemáticas que contenga las siguientes
@@ -39,7 +39,7 @@ public class T8Ejercicio1 {
     case 1:
       System.out.print("Introduce el número para saber si es capicua: ");
       numero = sc.nextInt();
-      if (esCapicua(numero)) {
+      if (Mates.esCapicua(numero)) {
         System.out.println("El " + numero + " es capicúa");
       } else {
         System.out.println("El " + numero + " no es capicúa");
@@ -50,7 +50,7 @@ public class T8Ejercicio1 {
     case 2:
       System.out.print("Introduce el número para saber si es primo: ");
       numero = sc.nextInt();
-      if (esPrimo(numero)) {
+      if (Mates.esPrimo(numero)) {
         System.out.println("El numero " + numero + " es primo.");
       } else {
         System.out.println("El numero " + numero + " no es primo.");
@@ -60,7 +60,7 @@ public class T8Ejercicio1 {
     case 3:
       System.out.print("Introduce el número y te digo el siguiente primo: ");
       numero = sc.nextInt();
-      System.out.println("El siguiente primo es " + siguientePrimo(numero));
+      System.out.println("El siguiente primo es " + Mates.siguientePrimo(numero));
 
       break;
     case 4:
@@ -68,17 +68,17 @@ public class T8Ejercicio1 {
       int base = sc.nextInt();
       System.out.print("Introduce un exponente: ");
       int exponente = sc.nextInt();
-      System.out.println("El resultado de la potencia es : " + potencia(base, exponente));
+      System.out.println("El resultado de la potencia es : " + Mates.potencia(base, exponente));
       break;
     case 5:
       System.out.println("Introduce el número al que contarle los digitos : ");
       numero = sc.nextInt();
-      System.out.println("El numero introducido tiene " + digitos(numero));
+      System.out.println("El numero introducido tiene " + Mates.digitos(numero));
       break;
     case 6:
       System.out.println("Introduce el número a voltear: ");
       numero = sc.nextInt();
-      System.out.println("El número volteado es: " + voltea(numero));
+      System.out.println("El número volteado es: " + Mates.voltea(numero));
 
       break;
     case 7:
@@ -86,14 +86,14 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.print("Introduce la posición: ");
       eleccion = sc.nextInt();
-      System.out.println("El digito que está en la posición " + eleccion + " es: " + digitoN(numero, eleccion));
+      System.out.println("El digito que está en la posición " + eleccion + " es: " + Mates.digitoN(numero, eleccion));
       break;
     case 8:
       System.out.println("Inserte el número donde buscar: ");
       numero = sc.nextInt();
       System.out.println("Inserte el número que buscar: ");
       int aBuscar = sc.nextInt();
-      System.out.println("Está en la posición : " + posicionDeDigito(numero, aBuscar));
+      System.out.println("Está en la posición : " + Mates.posicionDeDigito(numero, aBuscar));
 
       break;
     case 9:
@@ -101,7 +101,7 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.println("Inserte la cantidad de numeros que quitar");
       int aQuitar = sc.nextInt();
-      System.out.println("El número resultante es: " + quitaPorDetras(numero, aQuitar));
+      System.out.println("El número resultante es: " + Mates.quitaPorDetras(numero, aQuitar));
 
       break;
     case 10:
@@ -109,7 +109,7 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.println("Introduce la cantidad de números a quitar por delante");
       aQuitar = sc.nextInt();
-      System.out.println("El número resultante es: " + quitaPorDelante(numero, aQuitar));
+      System.out.println("El número resultante es: " + Mates.quitaPorDelante(numero, aQuitar));
 
       break;
     case 11:
@@ -117,7 +117,7 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.println("Introduce el número a pegar");
       int aPegar = sc.nextInt();
-      System.out.println("El resultado es: " + pegaPorDetras(numero, aPegar));
+      System.out.println("El resultado es: " + Mates.pegaPorDetras(numero, aPegar));
 
       break;
     case 12:
@@ -125,7 +125,7 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.println("Introduce el número a pegar");
       aPegar = sc.nextInt();
-      System.out.println("El resultado es: " + pegaPorDelante(numero, aPegar));
+      System.out.println("El resultado es: " + Mates.pegaPorDelante(numero, aPegar));
       break;
     case 13:
       System.out.println("Introduce el numero a trocear : ");
@@ -134,7 +134,7 @@ public class T8Ejercicio1 {
       int inicial = sc.nextInt();
       System.out.println("Introduce la posición final: ");
       int posFinal = sc.nextInt();
-      System.out.println("El resultado es: " + trozoDeNumero(numero, inicial, posFinal));
+      System.out.println("El resultado es: " + Mates.trozoDeNumero(numero, inicial, posFinal));
 
       break;
     case 14:
@@ -142,7 +142,7 @@ public class T8Ejercicio1 {
       numero = sc.nextInt();
       System.out.println("Introduce el segúndo numero a pegar: ");
       aPegar = sc.nextInt();
-      System.out.println("El resultado es: " + juntaNumeros(numero, aPegar));
+      System.out.println("El resultado es: " + Mates.juntaNumeros(numero, aPegar));
 
     default:
       break;
