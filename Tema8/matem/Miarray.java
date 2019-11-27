@@ -1,24 +1,31 @@
-public class T8Ejercicio20al28 {
-  public static void main(String[] args) {
+package matem;
 
-    /*
-     * Crea una biblioteca de funciones para arrays (de una dimensión) de números
-     * enteros que contenga las siguientes funciones: 1. generaArrayInt: Genera un
-     * array de tamaño n con números aleatorios cuyo intervalo (mínimo y máximo) se
-     * indica como parámetro. 2. minimoArrayInt: Devuelve el mínimo del array que se
-     * pasa como parámetro. 3. maximoArrayInt: Devuelve el máximo del array que se
-     * pasa como parámetro. 4. mediaArrayInt: Devuelve la media del array que se
-     * pasa como parámetro. 5. estaEnArrayInt: Dice si un número está o no dentro de
-     * un array. 6. posicionEnArray: Busca un número en un array y devuelve la
-     * posición (el índice) en la que se encuentra. 7. volteaArrayInt: Le da la
-     * vuelta a un array. 8. rotaDerechaArrayInt: Rota n posiciones a la derecha los
-     * números de un array. 9. rotaIzquierdaArrayInt: Rota n posiciones a la
-     * izquierda los números de un array.
-     */
-    System.out.println("Ejercicio 20: ");
-    System.out.println(generaArrayInt(10, 1, 10));
-    System.out.println("Ejercicio 21: ");
-    System.out.println("El valor minimo es : " + minimoArrayInt(generaArrayInt(10, 1, 10)));
+public class Miarray {
+  /**
+   * Muestra una array unidimensional
+   * 
+   * @param x Array a mostrar
+   * @return Pinta la array x
+   */
+  public static void muestraArray(int[] x) {
+    for (int i = 0; i < x.length; i++) {
+      System.out.print(" " + x[i] + " ");
+    }
+  }
+
+  /**
+   * Muestra una array bidimensional
+   * 
+   * @param x Array Bidimensional
+   * @@return Pinta array Bidimensional x
+   */
+  public static void muestraArrayBidi(int[][] x) {
+    for (int i = 0; i < x.length; i++) {
+      for (int j = 0; j < x[0].length; j++) {
+        System.out.print(" " + x[i][j] + " ");
+      }
+      System.out.println();
+    }
   }
 
   /**
