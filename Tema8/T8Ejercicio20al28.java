@@ -45,12 +45,35 @@ public class T8Ejercicio20al28 {
     }
     return valorminimo;
   }
+
   /**
    * 3. maximoArrayInt: Devuelve el máximo del array que se pasa como parámetro.
    */
+  public static int maximoArrayInt(int[] laArray) {
+    int valormaximo = 0;
+    for (int i = 0; i < laArray.length; i++) {
+      if (laArray[i] > valormaximo) {
+        valormaximo = laArray[i];
+      }
+    }
+    return valormaximo;
+  }
+
   /**
    * 4. mediaArrayInt: Devuelve la media del array que se pasa como parámetro.
    */
+  public static double mediaArrayInt(int[] laArray) {
+    int suma = 0;
+    int contador = 0;
+    for (int i = 0; i < laArray.length; i++) {
+      suma += laArray[i];
+      contador++;
+    }
+    int media = suma / contador;
+    return media;
+
+  }
+
   /**
    * 5. estaEnArrayInt: Dice si un número está o no dentro de un array.
    */
