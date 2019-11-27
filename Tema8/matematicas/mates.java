@@ -186,4 +186,11 @@ public class Mates {
   public static int juntaNumeros(int x, int y) {
     return (x * potencia(10, (int) digitos(y))) + y;
   }
+
+  /**
+   * Número aleatorio
+   */
+  public static int aleatorio(int x, int y) {
+    return (int) ((Math.random() * x) + y);
+  }
 }

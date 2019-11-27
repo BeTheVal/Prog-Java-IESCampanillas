@@ -11,4 +11,8 @@ public class T8Ejercicio17 {
     long binario = sc.nextLong();
 
   }
+
+  public static int binADecimal(long x) {
+
+  }
 }
