@@ -14,6 +14,26 @@ public class Miarray {
   }
 
   /**
+   * muestra array con indice
+   * 
+   * @param int[]x
+   */
+  public static void muestraArrayConIndice(int[] arr) {
+    System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
+    System.out.print("│ Índice ");
+    for (int i = 0; i < 10; i++) {
+      System.out.printf("│%4d ", i);
+    }
+    System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
+    System.out.print("│ Valor  ");
+    for (int i = 0; i < 10; i++) {
+      System.out.printf("│%4d ", arr[i]);
+    }
+    System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+
+  }
+
+  /**
    * Muestra una array bidimensional
    * 
    * @param x Array Bidimensional
