@@ -1,4 +1,4 @@
-import matematicas.Mates;
+import matem.Mates;
 
 public class T8Ejercicio15 {
 	public static void main(String[] args) {

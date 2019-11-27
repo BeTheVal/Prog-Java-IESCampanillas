@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import matematicas.Mates;
+import matem.Mates;
 
 public class T8Ejercicio1 {
   public static void main(String[] args) {
