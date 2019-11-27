@@ -77,10 +77,31 @@ public class T8Ejercicio20al28 {
   /**
    * 5. estaEnArrayInt: Dice si un número está o no dentro de un array.
    */
+  public static boolean estaEnArray(int[] arr, int numero) {
+    for (int i = 0; i < array.length; i++) {
+      if (i == numero) {
+        return true;
+      } else {
+        return false;
+      }
+
+    }
+  }
+
   /**
    * 6. posicionEnArray: Busca un número en un array y devuelve la posición (el
    * índice) en la que se encuentra.
    */
+  public static int posicionEnArray(int[] arr, int numero) {
+    int contador = 0;
+    for (int i = 0; i < array.length; i++) {
+      if (numero == i) {
+        return contador;
+      } else {
+        contador++;
+      }
+    }
+  }
   /**
    * 7. volteaArrayInt: Le da la vuelta a un array.
    */
