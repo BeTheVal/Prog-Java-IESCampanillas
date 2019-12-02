@@ -23,12 +23,12 @@ public class ArrayUni {
 	public static void muestraArrayConIndice(int[] arr) {
 		System.out.println("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
 		System.out.print("│ Índice ");
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			System.out.printf("│%4d ", i);
 		}
 		System.out.println("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
 		System.out.print("│ Valor  ");
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			System.out.printf("│%4d ", arr[i]);
 		}
 		System.out.println("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
