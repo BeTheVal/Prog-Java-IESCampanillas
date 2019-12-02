@@ -1,5 +1,7 @@
 package matematicas;
 
+import java.util.stream.IntStream;
+
 public class ArrayUni {
 	/**
 	 * Muestra una array unidimensional
@@ -195,5 +197,16 @@ public class ArrayUni {
 			}
 		}
 		return almacen;
+	}
+
+	/**
+	 * Une (concatena) dos arrays unidimensionales
+	 * 
+	 * @param arr1
+	 * @param arr2
+	 * @return array concatenada
+	 */
+	public static int[] concatena(int[] arr1, int[] arr2) {
+		return IntStream.concat(IntStream.of(arr1), IntStream.of(arr2)).toArray();
 	}
 }
