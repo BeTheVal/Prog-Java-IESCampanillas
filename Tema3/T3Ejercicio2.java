@@ -1,4 +1,4 @@
-public class Ejercicio2 {
+public class T3Ejercicio2 {
     public static void main(String[] args) {
         //Declaración de variables
         final double factorconver = 166.38;

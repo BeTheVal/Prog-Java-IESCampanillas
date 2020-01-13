@@ -1,4 +1,4 @@
-public class Ejercicio1 {
+public class T3Ejercicio1 {
     public static void main(String[] args) {
         //Declaración de variables
         int primernumero, segundonumero, resultado;
