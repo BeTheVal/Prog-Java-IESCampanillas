@@ -7,4 +7,4 @@ Usando el libro de <a href="https://github.com/LuisJoseSanchez">Luis José Sánc
 
 
 Repository created to save the files of the exercises of the course 19-20.  
-Using Luis José Sánchez´s book, "Aprende Java con Ejercicios"
+Using Luis José Sánchez's book, "Aprende Java con Ejercicios"
