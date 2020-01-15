@@ -1,13 +1,17 @@
 package T9Ejercicio2;
 
 public class Coche extends Vehiculo {
-  private long kilometrosRecorridos;
+   private static long kilometrosRecorridos;
 
-  void derrapar() {
-    System.out.println("Estás derrapando con el coche");
+  static void quemarRueda() {
+    System.out.println("Estás quemando rueda con el coche");
+  }
+  static void andar(long kilometrosCoche){
+    kilometrosRecorridos += kilometrosCoche;
+    setKilometrosTotales(getKilometrosTotales() + kilometrosCoche);
   }
 
-  public long getKilometrosRecorridos() {
+  public static long getKilometrosRecorridos() {
     return kilometrosRecorridos;
   }
 

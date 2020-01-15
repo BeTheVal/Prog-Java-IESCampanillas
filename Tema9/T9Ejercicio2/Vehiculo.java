@@ -13,5 +13,8 @@ public class Vehiculo {
     return KilometrosTotales;
   }
 
-
+//setter
+  public static void setKilometrosTotales(long kilometrosTotales) {
+    KilometrosTotales = kilometrosTotales;
+  }
 }
