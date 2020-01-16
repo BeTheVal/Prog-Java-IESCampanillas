@@ -11,12 +11,12 @@ public class Fraccion {
     this.denominador = denominador;
   }
 
-  double simplifica() {
+  double simplifica(Fraccion a) {
     return 0.0;
 
   }
 
-  double multiplica() {
+  double multiplica(Fraccion a , Fraccion b) {
     return 0.0;
 
   }
@@ -25,20 +25,15 @@ public class Fraccion {
    * Devuelve el resultado de
    * 
    */
-  double divide() {
+  double divide(Fraccion a , Fraccion b) {
     return 0.0;
 
   }
 
   /**
-   * Imprime la fracción con numerador y denominador al revés.
+   * Devuelve el resultado de la inversión de dos fracciones
    */
-  void invierte() {
-    int aux;
-    aux = numerador;
-    this.numerador = this.denominador;
-    this.denominador = aux;
-    System.out.println(this.numerador + "/" + this.denominador);
+  void invierte(Fraccion a , Fraccion b) {
 
   }
 

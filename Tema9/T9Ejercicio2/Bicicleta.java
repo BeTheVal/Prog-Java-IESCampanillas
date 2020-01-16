@@ -3,7 +3,6 @@ package T9Ejercicio2;
 import java.util.Scanner;
 
 public class Bicicleta extends Vehiculo {
-  private static long kilometrosRecorridos;
   Scanner sc = new Scanner(System.in);
 
   void saltar() {
@@ -11,7 +10,7 @@ public class Bicicleta extends Vehiculo {
   }
    static void andar(long kilometrosBici){
     kilometrosRecorridos += kilometrosBici;
-    setKilometrosTotales((getKilometrosTotales() + kilometrosBici));
+    setKilometrosTotales((getKilometrosTotales() + kilometrosRecorridos));
   }
 
   public static long getKilometrosRecorridos() {

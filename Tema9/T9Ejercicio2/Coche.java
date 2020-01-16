@@ -1,7 +1,6 @@
 package T9Ejercicio2;
 
 public class Coche extends Vehiculo {
-   private static long kilometrosRecorridos;
 
   static void quemarRueda() {
     System.out.println("Estás quemando rueda con el coche");
