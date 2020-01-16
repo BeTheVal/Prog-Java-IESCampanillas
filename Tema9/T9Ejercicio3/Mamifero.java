@@ -1,4 +1,7 @@
 package T9Ejercicio3;
 
-public class Mamifero extends Animal {
+public abstract class Mamifero extends Animal {
+    public Mamifero(String nombre) {
+        super(nombre);
+    }
 }
