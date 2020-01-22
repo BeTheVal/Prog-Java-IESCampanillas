@@ -54,4 +54,5 @@ public class Tiempo {
     public String toString() {
         return horas + "h" + " " + minutos + "m" + " " + segundos + "s" + " ";
     }
+//TODO REFACTORIZAR!
 }
