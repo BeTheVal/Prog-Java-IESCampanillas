@@ -1,4 +1,4 @@
-package T9Ejercicio4;
+package T9AOEjercicio4;
 
 public class Fraccion {
     private int numerador;
