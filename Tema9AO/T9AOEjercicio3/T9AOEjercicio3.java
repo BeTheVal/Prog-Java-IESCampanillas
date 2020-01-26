@@ -18,6 +18,7 @@ public class T9AOEjercicio3 {
             System.out.println("Seleccione una opción: ");
             opcion = sc.nextInt();
             switch (opcion) {
+                //TODO Añadir codigo LIBRE a los borrados y que los nuevos sean añadidos al primer libre que encuentren.
                 case 1:
                     if (contador >= 100) {
                         System.out.println("Actualmente tienes 100 discos, no se pueden almacenar más, debes borrar.");
@@ -46,9 +47,6 @@ public class T9AOEjercicio3 {
                     break;
                 case 3:
                     break;
-                case 4:
-                    break;
-
             }
         } while (opcion != 4);
     }
