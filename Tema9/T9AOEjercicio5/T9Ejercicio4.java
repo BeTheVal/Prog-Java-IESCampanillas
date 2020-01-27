@@ -1,4 +1,4 @@
-package T9AOEjercicio4;
+package T9AOEjercicio5;
 
 public class T9Ejercicio4 {
   public static void main(String[] args) {

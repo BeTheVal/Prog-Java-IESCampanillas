@@ -1,4 +1,4 @@
-package T9AOEjercicio3;
+package T9AOEjercicio3y4;
 
 public class Disco {
     private String codigo;
