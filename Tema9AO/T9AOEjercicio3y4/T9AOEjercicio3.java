@@ -23,7 +23,6 @@ public class T9AOEjercicio3 {
             System.out.println("Seleccione una opción: ");
             opcion = sc.nextInt();
             switch (opcion) {
-                //TODO Arreglar la creación de discos, solo se guarda el primero.
                 case 1:
                     if (contador >= 100) {
                         System.out.println(
@@ -109,3 +108,4 @@ public class T9AOEjercicio3 {
         } while (opcion != 5);
     }
 }
+//TODO Refactorizar creacion y borrado de discos.
