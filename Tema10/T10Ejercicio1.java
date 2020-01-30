@@ -14,4 +14,5 @@ public class T10Ejercicio1 {
       System.out.println(alumno);
     }
   }
+
 }
