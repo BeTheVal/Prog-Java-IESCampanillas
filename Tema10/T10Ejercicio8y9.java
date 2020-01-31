@@ -66,7 +66,6 @@ public class T10Ejercicio8y9 {
                 resultado.add(baraja.get(aleat));
             }
         }
-        Collections.sort();
         //TODO Ordenar AL Resultado
 
     }
