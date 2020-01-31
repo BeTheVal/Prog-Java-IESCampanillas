@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Disco {
 
     private String codigo;
@@ -65,5 +67,18 @@ public class Disco {
         cadena += "\n------------------------------------------";
         return cadena;
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Disco disco = (Disco) o;
+        return Objects.equals(codigo, disco.codigo);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 }
