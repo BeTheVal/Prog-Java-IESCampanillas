@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class T10Ejercicio13 {
-
+//TODO Terminar ejercicio.
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     ArrayList<Articulo> articulos = new ArrayList<>();

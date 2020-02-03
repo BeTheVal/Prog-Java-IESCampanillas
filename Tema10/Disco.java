@@ -56,7 +56,7 @@ public class Disco {
         this.genero = genero;
         this.duracion = duracion;
     }
-
+    @Override
     public String toString() {
         String cadena = "\n------------------------------------------";
         cadena += "\nCódigo: " + this.codigo;

@@ -1,7 +1,7 @@
 package T9AOEjercicio5;
 
 import java.util.Scanner;
-
+//TODO refactorizar con COLLECTIONS.remove()
 public class T9AOEjercicio5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
