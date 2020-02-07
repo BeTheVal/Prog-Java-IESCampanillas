@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Articulo {
 
     private String codigo;
@@ -14,6 +16,10 @@ public class Articulo {
         this.precioCompra = precioCompra;
         this.precioVenta = precioVenta;
         this.stock = stock;
+    }
+
+    public Articulo(String codigo) {
+        this.codigo = codigo;
     }
     // ToString
 
@@ -68,5 +74,24 @@ public class Articulo {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    //equals
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Articulo articulo = (Articulo) o;
+        return Objects.equals(codigo, articulo.codigo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codigo);
     }
 }

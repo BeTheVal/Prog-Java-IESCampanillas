@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class T10Ejercicio13 {
-//TODO Terminar ejercicio.
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     ArrayList<Articulo> articulos = new ArrayList<>();
@@ -38,11 +38,7 @@ public class T10Ejercicio13 {
         case 3:
           System.out.println("Introduce el código del artículo que deseas borrar");
           String codeToDelete = sc.next();
-          for (int i = 0; i < articulos.size(); i++) {
-            if (articulos.get(i).getCodigo().equals(codeToDelete)) {
-              articulos.remove(i);
-            }
-          }
+          articulos.remove(articulos.equals(new Articulo(codeToDelete)));
           break;
         case 4:
           System.out.println("Introduce el código del producto a modificar");
