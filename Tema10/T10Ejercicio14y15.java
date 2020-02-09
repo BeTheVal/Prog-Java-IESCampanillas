@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class T10Ejercicio14 {
+public class T10Ejercicio14y15 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -13,21 +13,34 @@ public class T10Ejercicio14 {
     productos.put("jengibre", 3.13);
     productos.put("quinoa", 4.50);
     productos.put("guisantes", 1.60);
+    productos.put("unidad", 1.00);
     String producto = " ";
     int cantidad = 0;
     ArrayList<Integer> cantidades = new ArrayList<>();
     ArrayList<String> producElegido = new ArrayList<>();
+
     while (!producto.equals("fin")) {
       System.out.println("Producto: ");
       producto = sc.next();
       if (!producto.equals("fin")) {
         System.out.println("Cantidad: ");
         cantidad = sc.nextInt();
-        producElegido.add(producto);
-        cantidades.add(cantidad);
+        if (producElegido.contains(producto)) {
+          int indice = producElegido.indexOf(producto);
+          cantidades.set(indice, cantidades.get(indice) + cantidad);
+        } else {
+          producElegido.add(producto);
+          cantidades.add(cantidad);
+        }
       }
     }
     double total = 0;
+    boolean condescuento = false;
+    System.out.println("Teclee el código de descuento");
+    String tienedescuento = sc.next();
+    if (tienedescuento.equals("ECODTO")) {
+      condescuento = true;
+    }
 
     System.out.println("Producto Precio Cantidad Subtotal");
     System.out.println("---------------------------------");
@@ -41,9 +54,14 @@ public class T10Ejercicio14 {
 
     }
     System.out.println("---------------------------------");
+    if (condescuento) {
+      double descuento = 10 * 100 / total;
+      String descString = String.format("%.2f", descuento);
+      total = total - descuento;
+      System.out.println("Descuento = " + descString);
+    }
     String totalString = String.format("%.2f", total);
     System.out.println("Total: " + totalString);
 
   }
-
 }
