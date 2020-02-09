@@ -1,5 +1,5 @@
+import java.io.PrintStream;
 import java.util.HashMap;
-import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class T10Ejercicio11 {
@@ -27,18 +27,20 @@ public class T10Ejercicio11 {
     diccionario.put("plato", "plate");
     diccionario.put("chocolate", "chocolate");
     diccionario.put("moto", "motorcycle");
+    int acierto = 0;
     int fallos = 0;
-    int aciertos = 0;
-    for (Entry<String, String> dic : diccionario.entrySet()) {
-      System.out.println("¿Como es " + dic.getKey() + " en inglés?");
-      String respuesta = sc.next().toLowerCase();
-      if (respuesta.equals(dic.getValue())) {
-        aciertos++;
+    for (String s : diccionario.keySet()) {
+      System.out.println("¿Como es " + s + "en inglés?");
+      String respuesta = sc.next();
+      if (respuesta.equals(diccionario.get(s))) {
+        acierto++;
       } else {
         fallos++;
       }
-      System.out.println("Aciertos : " + aciertos + "\n" + "Fallos : " + fallos);
-
     }
+    System.out.println("Aciertos : " + acierto);
+    System.out.println("Fallos : " + fallos);
+
   }
+
 }
