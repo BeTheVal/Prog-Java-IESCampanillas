@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class Carrito {
 
   ArrayList<Elemento> contenidoCarrito = new ArrayList<>();
-  private int numerodelementos;
   private double importetotal;
 
   public void agrega(Elemento elemento) {
@@ -18,7 +17,7 @@ public class Carrito {
 
 
   public int numeroDeElementos() {
-    return numerodelementos;
+    return contenidoCarrito.size();
   }
 
   public double importeTotal() {
