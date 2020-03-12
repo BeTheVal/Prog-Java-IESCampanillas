@@ -25,13 +25,8 @@ public class Articulo {
 
     @Override
     public String toString() {
-        return "Articulo{" +
-            "codigo='" + codigo + '\'' +
-            ", descripcion='" + descripcion + '\'' +
-            ", precioCompra=" + precioCompra +
-            ", precioVenta=" + precioVenta +
-            ", stock=" + stock +
-            '}';
+      return codigo + descripcion + " Precio de Compra " + precioCompra + " Euros " +
+          " Precio de venta " + precioVenta + " Euros " + " Stock " + stock;
     }
     //GETTER AND SETTER
 

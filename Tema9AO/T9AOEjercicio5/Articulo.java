@@ -19,13 +19,13 @@ public class Articulo {
 
     @Override
     public String toString() {
-        return "Articulo{" +
-                "codigo='" + codigo + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", precioCompra=" + precioCompra +
-                ", precioVenta=" + precioVenta +
-                ", stock=" + stock +
-                '}';
+        return "Ex07mvgp01.Articulo{" +
+            "codigo='" + codigo + '\'' +
+            ", descripcion='" + descripcion + '\'' +
+            ", precioCompra=" + precioCompra +
+            ", precioVenta=" + precioVenta +
+            ", stock=" + stock +
+            '}';
     }
     //GETTER AND SETTER
 
