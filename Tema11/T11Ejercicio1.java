@@ -6,7 +6,7 @@ import java.io.IOException;
 public class T11Ejercicio1 {
 
   public static void main(String[] args) throws IOException {
-    BufferedWriter bw = new BufferedWriter(new FileWriter("primos"));
+    BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
     for (int i = 0; i < 500; i++) {
       if (esPrimo(i)) {
         bw.write(i + "\n");

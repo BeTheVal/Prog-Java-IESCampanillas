@@ -15,9 +15,9 @@ public class T11Ejericicio2 {
       }
       br.close();
     } catch (FileNotFoundException fnfe) {
-      System.out.println("No se encuentra el fichero malaga.txt");
+      System.out.println("No se encuentra el fichero primos.dat");
     } catch (IOException ioe) {
-      System.out.println("No se puede leer el fichero malaga.txt");
+      System.out.println("No se puede leer el fichero primos.dat");
     }
   }
 }
