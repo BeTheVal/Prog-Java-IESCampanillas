@@ -1,0 +1,6 @@
+// Comentario simple
+
+/* Comentario
+de varias lineas */
+
+<codigo>
