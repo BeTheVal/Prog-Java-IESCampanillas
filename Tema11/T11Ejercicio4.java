@@ -15,12 +15,11 @@ public class T11Ejercicio4 {
       String linea = "";
       ArrayList<String> horosco = new ArrayList<>();
 
-      while (linea != null) {
+      do {
+        horosco.add(linea);
         linea = br.readLine();
-        if (linea != null) {
-          horosco.add(linea);
-        }
-      }
+      } while (linea != null);
+
       br.close();
       Collections.sort(horosco);
       BufferedWriter bw = new BufferedWriter(new FileWriter(args[0] + "_sort.txt"));
